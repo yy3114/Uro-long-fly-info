@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>長途旅行與泌尿健康指南</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts: Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f0f9ff;
+            color: #1e293b;
+        }
+        .hero-pattern {
+            background-color: #0ea5e9;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0f2fe' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i data-lucide="plane" class="h-8 w-8 text-sky-600 mr-2"></i>
+                    <span class="font-bold text-xl text-slate-800">旅途泌尿健康</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#risks" class="text-slate-600 hover:text-sky-600 font-medium">常見風險</a>
+                    <a href="#prevention" class="text-slate-600 hover:text-sky-600 font-medium">預防策略</a>
+                    <a href="#calculator" class="text-slate-600 hover:text-sky-600 font-medium">飲水計算機</a>
+                    <a href="#faq" class="text-slate-600 hover:text-sky-600 font-medium">常見問題</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-sky-600 focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="#risks" class="block px-4 py-2 text-slate-600 hover:bg-sky-50">常見風險</a>
+            <a href="#prevention" class="block px-4 py-2 text-slate-600 hover:bg-sky-50">預防策略</a>
+            <a href="#calculator" class="block px-4 py-2 text-slate-600 hover:bg-sky-50">飲水計算機</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern pt-32 pb-20 px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">長途旅行，別讓泌尿問題掃興</h1>
+            <p class="text-xl md:text-2xl text-sky-100 mb-8 max-w-2xl mx-auto">
+                乾燥的機艙、久坐不動、憋尿，這些都是旅途中的隱形殺手。了解如何保護您的泌尿系統，享受健康的旅程。
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#calculator" class="bg-white text-sky-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-sky-50 transition duration-300">
+                    計算建議飲水量
+                </a>
+                <a href="#prevention" class="bg-sky-700 bg-opacity-50 text-white border border-white font-bold py-3 px-8 rounded-full hover:bg-sky-600 transition duration-300">
+                    查看預防清單
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Section 1: Why it happens? -->
+        <section class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">為什麼長途旅行會影響<br>泌尿系統？</h2>
+                <div class="w-24 h-1 bg-sky-500 mx-auto rounded"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center card-hover">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="droplets" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">極度乾燥</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        飛機機艙內的濕度通常低於 20%，比沙漠還乾燥。身體水分流失速度比平常快，導致尿液濃縮，容易引發結石或感染。
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center card-hover">
+                    <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="armchair" class="h-8 w-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">久坐不動</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        長時間限制在狹小的座位上，不僅影響血液循環（經濟艙症候群），也會壓迫骨盆底肌，影響正常的排尿感知。
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center card-hover">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="clock" class="h-8 w-8 text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">憋尿習慣</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        因為廁所不便、衛生疑慮或不想打擾鄰座，旅客常會刻意減少喝水並習慣性憋尿，這是泌尿道感染的主因。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The 3 Risks -->
+        <section id="risks" class="mb-20 bg-white rounded-3xl shadow-lg p-8 md:p-12">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6">長途旅行<br><span class="text-sky-600">三大潛在危機</span></h2>
+                    <p class="text-slate-600 mb-6">
+                        了解這些症狀，有助於您在旅途中保持警覺。若有相關病史（如攝護腺肥大、結石），更應加倍小心。
+                    </p>
+                    <button onclick="document.getElementById('prevention').scrollIntoView()" class="flex items-center text-sky-600 font-bold hover:text-sky-800 transition">
+                        如何預防 <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                    </button>
+                </div>
+                
+                <div class="md:w-2/3 grid gap-6">
+                    <!-- Risk Item 1 -->
+                    <div class="flex gap-4 p-4 rounded-xl hover:bg-slate-50 transition">
+                        <div class="flex-shrink-0">
+                            <span class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-red-100 text-red-600 font-bold">1</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-800">急性膀胱炎 / 泌尿道感染 (UTI)</h4>
+                            <p class="text-sm text-slate-600 mt-1">女性風險較高。症狀包括頻尿、尿急、排尿灼熱痛，甚至血尿。</p>
+                        </div>
+                    </div>
+                    <!-- Risk Item 2 -->
+                    <div class="flex gap-4 p-4 rounded-xl hover:bg-slate-50 transition">
+                        <div class="flex-shrink-0">
+                            <span class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-orange-100 text-orange-600 font-bold">2</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-800">尿路結石發作</h4>
+                            <p class="text-sm text-slate-600 mt-1">脫水導致尿液變濃，微小結晶聚集。症狀為劇烈腰痛、噁心嘔吐。</p>
+                        </div>
+                    </div>
+                    <!-- Risk Item 3 -->
+                    <div class="flex gap-4 p-4 rounded-xl hover:bg-slate-50 transition">
+                        <div class="flex-shrink-0">
+                            <span class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-indigo-100 text-indigo-600 font-bold">3</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-800">急性尿滯留</h4>
+                            <p class="text-sm text-slate-600 mt-1">常見於攝護腺肥大的男性。飲酒、服用感冒藥或長時間憋尿可能導致突然「尿不出來」，膀胱脹痛。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Calculator -->
+        <section id="calculator" class="mb-20">
+            <div class="bg-gradient-to-br from-sky-500 to-blue-600 rounded-3xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8 md:p-12 text-white flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-4">💧 旅途飲水計算機</h2>
+                        <p class="opacity-90 mb-6">不知道在飛機上該喝多少水？輸入您的飛行時數，我們會給您一個基本建議。保持水分是預防結石與感染的最有效方法。</p>
+                        <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm border border-white/20">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="info" class="h-5 w-5 mt-1 text-sky-200"></i>
+                                <p class="text-sm">建議盡量選擇純水，避免過多咖啡或酒精，因為它們具有利尿作用，反而可能加速脫水。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 md:p-12">
+                        <div class="space-y-6">
+                            <div>
+                                <label for="flight-hours" class="block text-sm font-medium text-slate-700 mb-2">預計飛行/乘車時數 (小時)</label>
+                                <input type="number" id="flight-hours" min="1" max="24" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition" placeholder="例如：12">
+                            </div>
+                            
+                            <button onclick="calculateWater()" class="w-full bg-sky-600 text-white font-bold py-3 rounded-lg hover:bg-sky-700 transition shadow-lg hover:shadow-xl transform active:scale-95">
+                                計算建議量
+                            </button>
+
+                            <div id="result-area" class="hidden mt-6 bg-slate-50 p-6 rounded-xl border border-slate-100 animate-fade-in">
+                                <h4 class="text-slate-500 text-sm font-medium uppercase tracking-wide">建議總飲水量</h4>
+                                <div class="flex items-baseline mt-2">
+                                    <span id="water-result" class="text-4xl font-bold text-sky-600">0</span>
+                                    <span class="text-xl text-slate-600 ml-2">ml (毫升)</span>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-200">
+                                    <p class="text-slate-600 text-sm">
+                                        相當於約 <span id="cup-result" class="font-bold text-slate-800">0</span> 杯機上水杯。
+                                    </p>
+                                    <p class="text-xs text-slate-400 mt-2">*此為一般建議，若有心臟病或腎臟病限水者請遵照醫囑。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Prevention Checklist -->
+        <section id="prevention" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">預防勝於治療：行動清單</h2>
+                <p class="text-slate-600">這是一份簡單的檢查表，在出發前和旅途中請務必參考。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Checklist Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                        <i data-lucide="check-square" class="mr-2 text-green-500"></i> 行為準則
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <input type="checkbox" class="mt-1 h-5 w-5 text-sky-600 rounded border-gray-300 focus:ring-sky-500">
+                            <span class="ml-3 text-slate-700"><b>定時排尿：</b>每 2-3 小時至少上一次廁所，即使沒有強烈尿意，也不要憋尿。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <input type="checkbox" class="mt-1 h-5 w-5 text-sky-600 rounded border-gray-300 focus:ring-sky-500">
+                            <span class="ml-3 text-slate-700"><b>多喝水：</b>根據計算機建議，分次少量飲水，保持尿液顏色呈淡黃色。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <input type="checkbox" class="mt-1 h-5 w-5 text-sky-600 rounded border-gray-300 focus:ring-sky-500">
+                            <span class="ml-3 text-slate-700"><b>避免刺激物：</b>減少咖啡、茶、酒精及辛辣食物的攝取，以免刺激膀胱。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <input type="checkbox" class="mt-1 h-5 w-5 text-sky-600 rounded border-gray-300 focus:ring-sky-500">
+                            <span class="ml-3 text-slate-700"><b>起身活動：</b>走動可促進代謝，也有助於腸胃蠕動，減少腹脹對膀胱的壓迫。</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tips Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                        <i data-lucide="shield-check" class="mr-2 text-blue-500"></i> 特殊族群叮嚀
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-sky-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-sky-800 text-sm mb-1">攝護腺肥大患者</h4>
+                            <p class="text-sky-700 text-sm">出發前請先諮詢醫師，備妥相關藥物。避免服用含有抗組織胺的感冒藥或暈機藥，以免誘發尿滯留。</p>
+                        </div>
+                        <div class="bg-pink-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-pink-800 text-sm mb-1">反覆泌尿道感染女性</h4>
+                            <p class="text-pink-700 text-sm">建議穿著寬鬆透氣的棉質褲裝，避免緊身牛仔褲。可考慮攜帶預防性抗生素（需醫師處方）。</p>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-amber-800 text-sm mb-1">結石病史者</h4>
+                            <p class="text-amber-700 text-sm">水分攝取是關鍵。如果旅途中出汗多，水分補充量需再增加。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8 text-slate-800">常見問題 FAQ</h2>
+            <div class="space-y-4">
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 cursor-pointer">
+                    <summary class="flex justify-between items-center p-5 font-medium text-slate-800 group-hover:text-sky-600 transition">
+                        如果在飛機上突然腰痛或排尿疼痛怎麼辦？
+                        <i data-lucide="chevron-down" class="h-5 w-5 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-slate-600 leading-relaxed">
+                        請立即通知空服員。若是結石引起的腰痛，通常非常劇烈，需要止痛藥。多喝水有助於排出微小結石或緩解感染症狀。落地後請儘速就醫。
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 cursor-pointer">
+                    <summary class="flex justify-between items-center p-5 font-medium text-slate-800 group-hover:text-sky-600 transition">
+                        蔓越莓汁對預防感染有用嗎？
+                        <i data-lucide="chevron-down" class="h-5 w-5 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-slate-600 leading-relaxed">
+                        部分研究顯示蔓越莓含有前花青素，可能有助於減少大腸桿菌附著於尿路壁，對預防女性泌尿道感染有輔助效果。但在飛機上，市售蔓越莓汁通常含糖量高，<b>直接喝水還是最好的選擇</b>，或者可以攜帶蔓越莓錠劑。
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 cursor-pointer">
+                    <summary class="flex justify-between items-center p-5 font-medium text-slate-800 group-hover:text-sky-600 transition">
+                        為了不想上廁所，我可以在登機前少喝水嗎？
+                        <i data-lucide="chevron-down" class="h-5 w-5 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-slate-600 leading-relaxed text-red-600">
+                        千萬不要。
+                        <span class="text-slate-600">
+                        機艙環境已經非常乾燥，主動脫水會大幅增加血液濃稠度（血栓風險）及泌尿道感染機率。這是一種「省小事花大錢」的危險行為。
+                        </span>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center mb-6">
+                <i data-lucide="heart-pulse" class="h-8 w-8 text-rose-500"></i>
+            </div>
+            <p class="mb-4">祝您旅途平安，健康愉快。</p>
+            <p class="text-sm text-slate-500 max-w-2xl mx-auto">
+                免責聲明：本網頁內容僅供衛教參考，不能取代專業醫療診斷與治療。若有身體不適，請務必諮詢專業醫師。
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Water Calculator Logic
+        function calculateWater() {
+            const hoursInput = document.getElementById('flight-hours');
+            const resultArea = document.getElementById('result-area');
+            const waterResult = document.getElementById('water-result');
+            const cupResult = document.getElementById('cup-result');
+
+            const hours = parseFloat(hoursInput.value);
+
+            if (!hours || hours <= 0) {
+                alert("請輸入有效的時數！");
+                return;
+            }
+
+            // Calculation Logic:
+            // Base recommendation: approx 200ml - 250ml per hour during flight due to low humidity.
+            // This is a general guideline.
+            const mlPerHour = 220; 
+            const totalMl = Math.round(hours * mlPerHour);
+            
+            // Assuming a standard plastic cup on plane is about 150-200ml
+            const cups = (totalMl / 200).toFixed(1);
+
+            waterResult.textContent = totalMl;
+            cupResult.textContent = cups;
+            
+            resultArea.classList.remove('hidden');
+            resultArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>
+
+
